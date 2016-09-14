@@ -2,25 +2,28 @@
 	<h1>Timeline Elcoma</h1>
 	<p>1º Etapa do processo de Estágio - Desenvolvimento de Aplicação</p>
 </div>
-<div class="container">
+<div class="container posts">
+  <div class="row">
+    <div class="col-xs-12">
+      <h3 style="text-align: center">Posts:</h3>
+    </div>
+  </div>
 	<% @dados.each do |post| %>
-	<div class="row">
+	<div class="row post">
 		<div class="col-xs-2">
 			<img class="img-responsive img-thumbnail" src="<%= post['user']['picture']%>" alt="Foto de <%= post['user']['username'] %>">
 		</div>
 		<div class="col-xs-10">
 			<div class="row">
-				<div class="col-md-3 col-xs-6">
-					<b><p><%= post['user']['username'] %></p></b>
+				<div class="col-md-6 col-xs-12">
+					<p><b><%= post['user']['username'] %></b>:
+            <%= post['user']['location'] %></p>
 				</div>
-				<div class="col-md-3 col-xs-6">
+				<div class="col-md-3 col-xs-6 date">
 					<p><%= post['date'] %></p>
 				</div>
-				<div class="col-md-3 col-xs-6">
-					<p><%= post['likes'] %></p>
-				</div>
-				<div class="col-md-3 col-xs-6">
-					<p><%= post['user']['location'] %></p>
+				<div class="col-md-3 col-xs-6 likes">
+					<p><%= post['likes'] %> <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></p>
 				</div>
 			</div>
 			<div class="row">
@@ -31,4 +34,9 @@
 		</div>
 	</div>
 	<% end %>
+  <div class="row">
+    <div class="col-xs-12">
+      <h3 style="text-align: center">Fim dos posts. :(</h3>
+    </div>
+  </div>
 </div>
