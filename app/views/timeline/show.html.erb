@@ -8,6 +8,7 @@
       <h3 style="text-align: center">Posts:</h3>
     </div>
   </div>
+  <% i=0 %>
 	<% @dados.each do |post| %>
 	<div class="row post">
 		<div class="col-xs-2">
@@ -23,7 +24,9 @@
 					<p><%= post['date'] %></p>
 				</div>
 				<div class="col-md-3 col-xs-6 likes">
-					<p><%= post['likes'] %> <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></p>
+          <button class="btn btn-xs btn-default" id="botaoCurtida<%= i %>" onclick="pressButton(<%= i %>)">
+            <span id="curtidas<%=i%>"><%= post['likes'] %></span> <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+          </button>
 				</div>
 			</div>
 			<div class="row">
@@ -33,6 +36,7 @@
 			</div>
 		</div>
 	</div>
+  <% i+=1 %>
 	<% end %>
   <div class="row">
     <div class="col-xs-12">
