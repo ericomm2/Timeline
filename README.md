@@ -19,9 +19,9 @@
 <p>Pronto, o projeto já deve estar em execução</p>
 <h1>Código fonte</h1>
 <p>A base do código fonte se encontra em:</p>
-<b>./app/stylesheets/timeline.scss</b>
-<b>./app/javascripts/scripts.js</b>
-<b>./app/controllers/timeline_controller.rb</b>
-<b>./app/views/layouts/application.html.erb</b>
-<b>./app/views/timeline/show.html.erb</b>
+<b>./app/stylesheets/timeline.scss</b><br>
+<b>./app/javascripts/scripts.js</b><br>
+<b>./app/controllers/timeline_controller.rb</b><br>
+<b>./app/views/layouts/application.html.erb</b><br>
+<b>./app/views/timeline/show.html.erb</b><br>
 <b>./config/routes.rb</b>
