@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-	get 'timeline', to: 'timeline#show'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  #mapeia as chamadas a 'localhost:3000/' para o método show de 'app/controllers/timeline_controller.rb' e a view
+  #app/views/timeline/show.html.erb
+	get '/', to: 'timeline#show'
 end
